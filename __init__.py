@@ -2,7 +2,9 @@
 from flask import Flask, url_for, render_template, redirect
 
 app = Flask (__name__)
+app.config['SECRET_KEY]= 'UZUMYMW_15032325'
 
+           
 @app.route("/")
 def inicio():
   return render_template("inicio.html")
