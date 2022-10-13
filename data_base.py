@@ -14,7 +14,7 @@ class User(db.Model):
     
   class chamados(db.Model):
     __tablename__ = 'chamados'
-    chamados_add = usuarios()
+    chamados_add = chamados()
     chamados_add.id = db.column(db.Integer, primary_key=True)
     chamados_add.to = db.column(db.String(84), nullable=False)
     chamados_add.conteudo = db.column(db.String(84), nullable=False)
