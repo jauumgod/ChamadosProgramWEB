@@ -14,8 +14,12 @@ def inicio():
 def register():
   return render_template("register.html")
 
-@app.route("/login")
+@app.route("/login", method='POST')
 def login():
+   if request== 'POST'
+      user = request.form['name']
+      password = request.form['password']
+           
   return render_template("login.html")
 
 @app.route("/chamados")
